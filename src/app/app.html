@@ -1,0 +1,38 @@
+<div class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="status-badge glass-panel mono">
+        <span class="pulse"></span> Available for freelance data projects
+      </div>
+      
+      <h1 class="hero-title">
+        Turning complex data into <br/>
+        <span class="gradient-text">intelligent systems.</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        I'm Simonee Ezekiel Mariquit. I build data pipelines, predictive models, and agentic AI systems that drive real-world impact.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Data Projects</a>
+        <a href="mailto:semariquit@gmail.com" class="contact-link">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="projects-section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>A selection of my recent data science and engineering work.</p>
+    </div>
+    
+    <div class="projects-grid">
+      <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+    </div>
+  </div>
+</section>
+
+<router-outlet />
